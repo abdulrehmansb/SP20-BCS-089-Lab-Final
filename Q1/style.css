@@ -1,0 +1,16 @@
+#parentDiv {
+  display: flex;
+}
+
+#pre,
+#pos {
+  padding: 8px 16px;
+  margin: 0 8px;
+  border: none;
+  background-color: #0000ff;
+  color: white;
+}
+
+#pgn {
+  margin: 0 8px;
+}

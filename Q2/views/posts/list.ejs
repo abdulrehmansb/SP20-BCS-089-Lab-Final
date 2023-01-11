@@ -1,0 +1,35 @@
+<h2><%= pageTitle %></h2>
+<a href="/posts/add" class="btn btn-info">Add New Posts</a>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Body</th>
+      <th>Tags</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% for( let index = 0; index < posts.length; index++ ) { %>
+    <tr>
+      <td><%=cars[index].make %></td>
+      <td><%=cars[index].model %></td>
+      <td><%=cars[index].variant %></td>
+      <td>
+        <a
+          href="/cars/edit/<%=cars[index]._id  %>"
+          class="btn btn-warning btn-sm"
+          >Edit</a
+        >
+      </td>
+      <td>
+        <a
+          href="/cars/delete/<%=cars[index]._id  %>"
+          class="btn btn-danger btn-sm"
+          >Delete</a
+        >
+      </td>
+    </tr>
+    <% } %>
+  </tbody>
+</table>
